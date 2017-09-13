@@ -16,19 +16,15 @@
   <div class="container">
     <div class="component">
       <h1>Movie Listing Component (Full)</h1>
-      <div class="row">
-        <div class="col-md-12">
-          <?php include('inc/movies.html') ?>
-        </div>
-      </div>
+      <?php include('inc/movies.html') ?>
     </div>
     <div class="component">
       <h1>Movie Listing Component (Sidebar)</h1>
-      <aside class="row">
-        <div class="col-sm-6 col-md-6 col-lg-4">
+      <div class="row">
+        <aside class="col-sm-6 col-md-6 col-lg-4">
           <?php include('inc/movies.html') ?>
-        </div>
-      </aside>
+        </aside>
+      </div>
     </div>
   </div>
   <script src="/assets/js/application.min.js"></script>

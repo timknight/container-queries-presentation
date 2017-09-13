@@ -1,0 +1,8 @@
+@mixin breakpoint($map) {
+  $breakpoint: map-get($breakpoints, $map);
+  $query: ();
+  @if map-has-key($breakpoint, min) { $query: append($query, "(min-width: #{map-get($breakpoint, min)})") }
+  @if map-has-key($breakpoint, min) and map-has-key($breakpoint, max) { $query: append($query, "and") }
+  @if map-has-key($breakpoint, max) { $query: append($query, "(max-width: #{map-get($breakpoint, max)})") }
+  @media #{$query} { @content; }
+}

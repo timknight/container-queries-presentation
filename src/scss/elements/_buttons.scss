@@ -1,0 +1,65 @@
+@mixin button-variant($color, $background, $border) {
+  background-color: $background;
+  border-color: $border;
+  color: $color;
+  &:hover, &:focus {
+    background-color: darken($background, 10%);
+    border-color: darken($border, 12%);
+    color: $color;
+  }
+  &:focus {
+    box-shadow: 0 0 0 2px rgba($border,.5); // Sets the accessible focus color based on the border color
+    outline: 0;
+  }
+  &:disabled, &.disabled {
+    background-color: $background;
+    border-color: $border;
+  }
+  &:active, &.active {
+    background-color: darken($background, 10%);
+    border-color: darken($border, 12%);
+    color: $color;
+  }
+}
+
+@mixin button-size($padding-y, $padding-x, $font-size, $border-radius) {
+  border-radius: $border-radius;
+  font-size: $font-size;
+  padding: $padding-y $padding-x;
+}
+
+.btn {
+  @include button-size($padding-y: .5rem, $padding-x: 1rem, $font-size: 1rem, $border-radius: .25rem);
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  transition: all .2s ease-in-out;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+  &:disabled, &.disabled {
+    cursor: not-allowed;
+    opacity: .65;
+    box-shadow: none;
+  }
+}
+
+// Basic foundation for various styling
+.btn {
+  @include button-variant($color: #292b2c, $background: #fff, $border: #ccc);
+}
+
+// Button sizes modifiers
+// -----------------------------------------------------------------------------
+.btn-lg {
+  @include button-size($padding-y: .75rem, $padding-x: 1.5rem, $font-size: 1.25rem, $border-radius: .3rem);
+}
+.btn-sm {
+  @include button-size($padding-y: .25rem, $padding-x: .5rem, $font-size: .875rem, $border-radius: .2rem);
+}

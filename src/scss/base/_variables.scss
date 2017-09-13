@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// Lays out the breakpoints used for the breakpoint mixin
+// -----------------------------------------------------------------------------
+$breakpoints: (
+  xs: ( max: 575px ),
+  sm: ( min: 576px ),
+  md: ( min: 768px ),
+  lg: ( min: 992px ),
+  xl: ( min: 1200px ),
+  sm-only: ( min: 576px, max: 767px ),
+  md-only: ( min: 768px, max: 991px ),
+  lg-only: ( min: 992px, max: 1199px )
+) !global;

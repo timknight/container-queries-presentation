@@ -1,0 +1,6 @@
+# General macOS
+._*
+.DS_Store
+
+# Packages
+node_modules/

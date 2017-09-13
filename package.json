@@ -1,0 +1,24 @@
+{
+  "name": "element-queries-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "gulp build"
+  },
+  "author": {
+    "name": "Tim Knight",
+    "email": "tim.knight@acst.org"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-concat": "*",
+    "gulp-merge-media-queries": "*",
+    "gulp-minify-css": "*",
+    "gulp-plumber": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "*",
+  }
+}

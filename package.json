@@ -5,8 +5,7 @@
     "build": "gulp build"
   },
   "author": {
-    "name": "Tim Knight",
-    "email": "tim.knight@acst.org"
+    "name": "Tim Knight"
   },
   "license": "MIT",
   "devDependencies": {

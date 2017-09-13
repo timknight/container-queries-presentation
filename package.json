@@ -8,7 +8,7 @@
     "name": "Tim Knight",
     "email": "tim.knight@acst.org"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "devDependencies": {
     "gulp": "*",
     "gulp-autoprefixer": "*",

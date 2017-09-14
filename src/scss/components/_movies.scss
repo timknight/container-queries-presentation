@@ -57,6 +57,16 @@
       flex-direction: column;
       position: relative;
 
+      @include breakpoint('md-only') {
+        &__title {
+          font-size: 0.75rem;
+        }
+
+        &__director {
+          font-size: 0.65rem;
+        }
+      }
+
       &__body {
         background-color:rgba(#343a40, 0.7);
         bottom: 0;

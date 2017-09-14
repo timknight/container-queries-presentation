@@ -1,3 +1,7 @@
+// Breakpoint Mixin, created by Tim Knight
+// See: https://medium.com/developing-with-sass/creating-a-dead-simple-sass-mixin-to-handle-responsive-breakpoints-889927b37740
+// Also: https://medium.com/developing-with-sass/refactoring-my-simple-sass-breakpoint-mixin-71205dd6badd
+// -----------------------------------------------------------------------------
 @mixin breakpoint($map) {
   $breakpoint: map-get($breakpoints, $map);
   $query: ();

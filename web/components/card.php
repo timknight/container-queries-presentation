@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/assets/css/application.min.css">
-  <title>Card Pattern - Element Query Examples</title>
+  <title>Card Pattern - Container Query Examples</title>
 </head>
 <body>
   <div class="page-header">
     <div class="container">
-      <h1><a href="/">Element Query Examples</a> &raquo; Card/Media Pattern</h1>
+      <h1><a href="/">Container Query Examples</a> &raquo; Card/Media Pattern</h1>
     </div>
   </div>
   <div class="container">
